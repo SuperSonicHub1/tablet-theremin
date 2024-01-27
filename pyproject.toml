@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "tablet-theremin"
+version = "0.1.0"
+description = ""
+authors = ["Kyle Anthony Williams <kyle.anthony.williams2@gmail.com>"]
+readme = "README.md"
+packages = [{include = "tablet_theremin"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mido = "^1.3.2"
+pygobject = "^3.46.0"
+pycairo = "^1.25.1"
+python-rtmidi = "^1.5.8"
+scamp-extensions = "^0.3.5.post2"
+reactivex = "^4.0.4"
+
+
+[tool.poetry.group.dev.dependencies]
+pygobject-stubs = "^2.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
